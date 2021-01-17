@@ -10,9 +10,9 @@ import SwiftUI
 
 struct WelcomeView: View {
     
+    var title = "Boas-vindas!"
     var nameAsk = "Como você se chama?"
     var description = "Queremos te apresentar alguém para te ajudar a arranjar um emprego. Alguém real como você, que passou pelas mesmas situações e agora está cheia de dicas para dar."
-    
     var description2 = "Para isso, seria ótimo te conhecer..."
     
     @State var username: String = ""
@@ -20,9 +20,7 @@ struct WelcomeView: View {
     var body: some View {
         VStack(alignment: .leading) {
             
-            
-            
-            Text("Boas-vindas!")
+            Text("\(title)")
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 .bold()
                 .frame(width: UIScreen.main.bounds.width*0.65, height: 105, alignment: .leading)
@@ -61,7 +59,6 @@ struct WelcomeView: View {
             
 //            OptionsScrollView()
             
-            // nao consegui encontrar o icone de next
             HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/){
                 Spacer()
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
