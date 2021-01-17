@@ -31,10 +31,7 @@ struct ContentView: View {
                         Text("Jornada")
                     }
                 
-                Provisoria()
-//                    .onAppear(perform: {
-//                        self.user.configureFirebaseState()
-//                    })
+              VoceView()
                     .tabItem {
                         Image(systemName: "face.smiling")
                         Text("Você")

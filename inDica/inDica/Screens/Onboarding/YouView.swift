@@ -46,7 +46,7 @@ struct YouView: View {
                 self.jaSeiQuemTeApresentarToggle.toggle()
                 
             }) {
-                Text("É isso mesmo.")
+                Text("É isso mesmo")
                     .bold()
             }
             .frame(width: UIScreen.main.bounds.width*0.7, height: 20, alignment: .center)

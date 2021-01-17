@@ -22,6 +22,8 @@
 		174FE34725B4B91D004048AE /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174FE34625B4B91D004048AE /* Journey.swift */; };
 		17A77D0C25B4D91E00D06218 /* YouView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A77D0B25B4D91E00D06218 /* YouView.swift */; };
 		17A77D1225B4E1E900D06218 /* JaSeiQuemTeApresentarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A77D1125B4E1E900D06218 /* JaSeiQuemTeApresentarView.swift */; };
+		17A77D1725B4F68800D06218 /* VoceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A77D1625B4F68800D06218 /* VoceView.swift */; };
+		17A77D1B25B4F93C00D06218 /* EditandoVoceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A77D1A25B4F93C00D06218 /* EditandoVoceView.swift */; };
 		17C023E025B49522000A8679 /* OnboardingToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C023DF25B49522000A8679 /* OnboardingToggle.swift */; };
 		17C023E325B4958A000A8679 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C023E225B4958A000A8679 /* MotherView.swift */; };
 		17E708F825B48464000006DA /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E708F725B48464000006DA /* UserSettings.swift */; };
@@ -58,6 +60,8 @@
 		174FE34625B4B91D004048AE /* Journey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
 		17A77D0B25B4D91E00D06218 /* YouView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouView.swift; sourceTree = "<group>"; };
 		17A77D1125B4E1E900D06218 /* JaSeiQuemTeApresentarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JaSeiQuemTeApresentarView.swift; sourceTree = "<group>"; };
+		17A77D1625B4F68800D06218 /* VoceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoceView.swift; sourceTree = "<group>"; };
+		17A77D1A25B4F93C00D06218 /* EditandoVoceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditandoVoceView.swift; sourceTree = "<group>"; };
 		17C023DF25B49522000A8679 /* OnboardingToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingToggle.swift; sourceTree = "<group>"; };
 		17C023E225B4958A000A8679 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
 		17E708F725B48464000006DA /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
@@ -157,6 +161,15 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		17A77D1525B4F66A00D06218 /* Voce */ = {
+			isa = PBXGroup;
+			children = (
+				17A77D1625B4F68800D06218 /* VoceView.swift */,
+				17A77D1A25B4F93C00D06218 /* EditandoVoceView.swift */,
+			);
+			path = Voce;
+			sourceTree = "<group>";
+		};
 		17E708FA25B484D0000006DA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +203,7 @@
 		3E2086BB25B407D6009BD8C6 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				17A77D1525B4F66A00D06218 /* Voce */,
 				17086E1925B4CC2100FBA22E /* Jornada */,
 				174FE34025B4AC79004048AE /* Onboarding */,
 				174FE34225B4AD05004048AE /* Provisoria.swift */,
@@ -276,7 +290,9 @@
 				17480D1325B3F7A50055E581 /* AppDelegate.swift in Sources */,
 				171D428625B467E9009A3855 /* SeachedAreaToWork.swift in Sources */,
 				3E0869C225B48A3D00966C65 /* OnboardingDeficiencyView.swift in Sources */,
+				17A77D1B25B4F93C00D06218 /* EditandoVoceView.swift in Sources */,
 				174FE34725B4B91D004048AE /* Journey.swift in Sources */,
+				17A77D1725B4F68800D06218 /* VoceView.swift in Sources */,
 				3ED081DB25B3FBE30071A17D /* OptionButtonView.swift in Sources */,
 				17A77D0C25B4D91E00D06218 /* YouView.swift in Sources */,
 				17086E1B25B4CC4800FBA22E /* MontarCurriculoView.swift in Sources */,
