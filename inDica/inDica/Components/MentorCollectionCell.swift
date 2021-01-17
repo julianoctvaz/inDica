@@ -10,7 +10,9 @@ import SwiftUI
 struct MentorCollectionCell: View {
     
     var name: String
-    
+    var job: String
+    var city: String
+
     var body: some View {
         
         VStack(alignment: .center){
@@ -31,13 +33,13 @@ struct MentorCollectionCell: View {
                 .bold()
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
             
-            Text("Corretora de Imóveis")
+            Text("\(job)")
                 .font(.title2)
                 .foregroundColor(.gray)
                 .padding(.top, UIScreen.main.bounds.height*0.005)
                 .padding(.bottom, UIScreen.main.bounds.height*0.005)
             
-            Text("Recife - PE")
+            Text("\(city)")
                 .font(.caption)
                 .padding(.bottom, UIScreen.main.bounds.height*0.01)
         }
@@ -52,6 +54,6 @@ struct MentorCollectionCell: View {
 
 struct MentorCollectionCell_Previews: PreviewProvider {
     static var previews: some View {
-        MentorCollectionCell(name: "Tereza")
+        MentorCollectionCell(name: "Tereza", job: "Corretora de Imóveis", city: "Recife - PE")
     }
 }
