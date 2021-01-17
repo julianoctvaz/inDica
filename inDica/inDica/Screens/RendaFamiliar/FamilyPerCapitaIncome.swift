@@ -7,11 +7,6 @@
 
 import SwiftUI
 
-class DataModel: ObservableObject {
-    @Published var rendas = ["Menos que um salário mínimo/mês", "De um a dois salários mínimos/mês", "De dois a três salário mínimos/mês", "Mais de três salários mínimos/mês", "Prefiro não dizer"]
-}
-
-
 struct FamilyPerCapitaIncomeView: View {
     
     var title = "Tudo bem falar da sua condição financeira?"
