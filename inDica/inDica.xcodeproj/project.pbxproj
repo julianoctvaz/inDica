@@ -13,6 +13,10 @@
 		17480D1925B3F7A70055E581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17480D1825B3F7A70055E581 /* Assets.xcassets */; };
 		17480D1C25B3F7A70055E581 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17480D1B25B3F7A70055E581 /* Preview Assets.xcassets */; };
 		17480D1F25B3F7A70055E581 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17480D1D25B3F7A70055E581 /* LaunchScreen.storyboard */; };
+		3E3A893425B3FDCB00CFB5B8 /* NewOptionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A893325B3FDCB00CFB5B8 /* NewOptionButtonView.swift */; };
+		3E3A893725B3FEF300CFB5B8 /* OnboardingGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A893625B3FEF300CFB5B8 /* OnboardingGender.swift */; };
+		3E602CBD25B4138900BEE977 /* OptionsScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E602CBC25B4138900BEE977 /* OptionsScrollView.swift */; };
+		3ED081DB25B3FBE30071A17D /* OptionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED081DA25B3FBE30071A17D /* OptionButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		17480D1B25B3F7A70055E581 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		17480D1E25B3F7A70055E581 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17480D2025B3F7A70055E581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E3A893325B3FDCB00CFB5B8 /* NewOptionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOptionButtonView.swift; sourceTree = "<group>"; };
+		3E3A893625B3FEF300CFB5B8 /* OnboardingGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingGender.swift; sourceTree = "<group>"; };
+		3E602CBC25B4138900BEE977 /* OptionsScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsScrollView.swift; sourceTree = "<group>"; };
+		3ED081DA25B3FBE30071A17D /* OptionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 		17480D1125B3F7A50055E581 /* inDica */ = {
 			isa = PBXGroup;
 			children = (
+				3E2086BB25B407D6009BD8C6 /* Screens */,
+				3E2086BA25B407CE009BD8C6 /* Components */,
 				17480D1225B3F7A50055E581 /* AppDelegate.swift */,
 				17480D1425B3F7A50055E581 /* SceneDelegate.swift */,
 				17480D1625B3F7A50055E581 /* ContentView.swift */,
@@ -73,6 +83,24 @@
 				17480D1B25B3F7A70055E581 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3E2086BA25B407CE009BD8C6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A893325B3FDCB00CFB5B8 /* NewOptionButtonView.swift */,
+				3ED081DA25B3FBE30071A17D /* OptionButtonView.swift */,
+				3E602CBC25B4138900BEE977 /* OptionsScrollView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3E2086BB25B407D6009BD8C6 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A893625B3FEF300CFB5B8 /* OnboardingGender.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +174,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				17480D1325B3F7A50055E581 /* AppDelegate.swift in Sources */,
+				3ED081DB25B3FBE30071A17D /* OptionButtonView.swift in Sources */,
 				17480D1525B3F7A50055E581 /* SceneDelegate.swift in Sources */,
+				3E602CBD25B4138900BEE977 /* OptionsScrollView.swift in Sources */,
+				3E3A893725B3FEF300CFB5B8 /* OnboardingGender.swift in Sources */,
 				17480D1725B3F7A50055E581 /* ContentView.swift in Sources */,
+				3E3A893425B3FDCB00CFB5B8 /* NewOptionButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
