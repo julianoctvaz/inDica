@@ -15,7 +15,7 @@ struct WelcomeView: View {
     var description = "Queremos te apresentar alguém para te ajudar a arranjar um emprego. Alguém real como você, que passou pelas mesmas situações e agora está cheia de dicas para dar."
     var description2 = "Para isso, seria ótimo te conhecer..."
     
-    @State var username: String = ""
+    @EnvironmentObject var user: UserSettings //deixar essa classe global com os dados do usario
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -47,18 +47,10 @@ struct WelcomeView: View {
                 .frame(width: UIScreen.main.bounds.width*0.8, height: 30, alignment: .leading)
                 .padding()
             
-//            TextField("Digite aqui seu nome", text: $username)
-//                .padding([.leading, .trailing], 20)
-//                .textFieldStyle(RoundedBorderTextFieldStyle())
-//                .autocapitalization(.words)
-//                .disableAutocorrection(true)
-//                .foregroundColor(Color.purple)
-//                .background(Color.purple)
-            
             Button(action: {
                 
             }) {
-                TextField("Digite seu nome", text: $username)
+                TextField("Digite seu nome", text: $user.username)
                     .disableAutocorrection(true)
             }
             .padding()
@@ -93,13 +85,13 @@ struct WelcomeView: View {
 struct WelcomeView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            WelcomeView()
+            WelcomeView().environmentObject(UserSettings())
                 .previewDevice("iPhone SE (2nd generation)")
-            WelcomeView()
+            WelcomeView().environmentObject(UserSettings())
                 .previewDevice("iPhone 11")
-            WelcomeView()
+            WelcomeView().environmentObject(UserSettings())
                 .previewDevice("iPhone 8")
-            WelcomeView()
+            WelcomeView().environmentObject(UserSettings())
                 .previewDevice("iPhone 11 Pro")
         }
     }
