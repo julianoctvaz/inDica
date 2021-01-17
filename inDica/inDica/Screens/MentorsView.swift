@@ -19,7 +19,7 @@ struct MentorsView: View {
             RoundedRectangle(cornerRadius: 8.0))
                 .edgesIgnoringSafeArea(.top)
                 .frame(width: UIScreen.main.bounds.width, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                .offset(x:0, y: -20)
+                .offset(x:0, y: -30)
 
 
             Text("Gente como você")
