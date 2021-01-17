@@ -20,6 +20,7 @@
 		17480D1F25B3F7A70055E581 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17480D1D25B3F7A70055E581 /* LaunchScreen.storyboard */; };
 		174FE34325B4AD05004048AE /* Provisoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174FE34225B4AD05004048AE /* Provisoria.swift */; };
 		174FE34725B4B91D004048AE /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174FE34625B4B91D004048AE /* Journey.swift */; };
+		17A77D0C25B4D91E00D06218 /* YouView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A77D0B25B4D91E00D06218 /* YouView.swift */; };
 		17C023E025B49522000A8679 /* OnboardingToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C023DF25B49522000A8679 /* OnboardingToggle.swift */; };
 		17C023E325B4958A000A8679 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C023E225B4958A000A8679 /* MotherView.swift */; };
 		17E708F825B48464000006DA /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E708F725B48464000006DA /* UserSettings.swift */; };
@@ -52,6 +53,7 @@
 		17480D2025B3F7A70055E581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		174FE34225B4AD05004048AE /* Provisoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provisoria.swift; sourceTree = "<group>"; };
 		174FE34625B4B91D004048AE /* Journey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
+		17A77D0B25B4D91E00D06218 /* YouView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouView.swift; sourceTree = "<group>"; };
 		17C023DF25B49522000A8679 /* OnboardingToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingToggle.swift; sourceTree = "<group>"; };
 		17C023E225B4958A000A8679 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
 		17E708F725B48464000006DA /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				3E0869BB25B4879200966C65 /* OnboardingBreedView.swift */,
 				3E0869BE25B4894A00966C65 /* OnboardingSexualityView.swift */,
 				3E0869C125B48A3D00966C65 /* OnboardingDeficiencyView.swift */,
+				17A77D0B25B4D91E00D06218 /* YouView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				3E0869C225B48A3D00966C65 /* OnboardingDeficiencyView.swift in Sources */,
 				174FE34725B4B91D004048AE /* Journey.swift in Sources */,
 				3ED081DB25B3FBE30071A17D /* OptionButtonView.swift in Sources */,
+				17A77D0C25B4D91E00D06218 /* YouView.swift in Sources */,
 				17086E1B25B4CC4800FBA22E /* MontarCurriculoView.swift in Sources */,
 				17C023E025B49522000A8679 /* OnboardingToggle.swift in Sources */,
 				3EF58F4325B4959300EC3606 /* MentorCollectionCell.swift in Sources */,
