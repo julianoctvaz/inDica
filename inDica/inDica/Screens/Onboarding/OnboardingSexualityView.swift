@@ -36,18 +36,21 @@ struct OnboardingSexualityView: View {
             }
             .frame(width: UIScreen.main.bounds.width*0.1, height: UIScreen.main.bounds.height*0.1, alignment: .center)
 
-            Text("Nos conte mais sobre você, \(name)!")
-                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+            Text("Nos conta mais\nsobre você,\n\(name)?")
+                .font(.title)
                 .bold()
-                .frame(width: UIScreen.main.bounds.width*0.65, height: 105, alignment: .leading)
-                .padding()
+                .frame(width: UIScreen.main.bounds.width*0.85, height: 105, alignment: .leading)
+            //   .padding()
             Text("\(description)")
+                .fixedSize(horizontal: false, vertical: true)
+                .font(.body)
                 .frame(width: UIScreen.main.bounds.width*0.8, height: 30, alignment: .leading)
-                .padding()
+                .padding(.vertical)
             
             ScrollView{
                 ForEach(bank.sexualities, id: \.self) { sex in
                     OptionButtonView(parametro: sex)
+                        .padding(.bottom)
                 }
               
             }.frame(width: UIScreen.main.bounds.width*0.8, height: UIScreen.main.bounds.height*0.4, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
