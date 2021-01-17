@@ -11,6 +11,7 @@ struct SeachedAreaToWorkView: View {
 
     var title = "Em qual área você se sente mais preparada?"
     var description = "Procuro emprego na área de..."
+    @StateObject var bank = DataModel()
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -28,9 +29,17 @@ struct SeachedAreaToWorkView: View {
                 .frame(width: UIScreen.main.bounds.width*0.8, height: 30, alignment: .leading)
                 .padding()
             
-            
-//            OptionsScrollView()
-            
+            ScrollView{
+                VStack{
+                    ForEach(bank.areas, id: \.self) { area    in
+                        OptionButtonView(parametro: area)
+                    }
+                    NewOptionButtonView(text: "Outra área")
+                }
+              
+            }.frame(width: UIScreen.main.bounds.width*0.8, height: UIScreen.main.bounds.height*0.4, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            .padding()
+
             HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/){
                 Spacer()
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
