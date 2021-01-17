@@ -111,6 +111,8 @@ struct MentorProfile: View {
                     .frame(width: UIScreen.main.bounds.width*0.9, height: 15, alignment: .leading)
                 
                 Image("contact")
+                    .resizable()
+                    .scaledToFill()
                     .frame(width: UIScreen.main.bounds.width*0.8, height: 20, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             }
             
