@@ -25,7 +25,7 @@ struct OnboardingGenderView: View {
                 .frame(width: UIScreen.main.bounds.width*0.8, height: 30, alignment: .leading)
                 .padding()
             
-            ScrollView{
+            ScrollView(.vertical){
                 ForEach(bank.genders, id: \.self) { gender in
                     OptionButtonView(parametro: gender)
                 }
