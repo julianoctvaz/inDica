@@ -8,7 +8,7 @@
 import SwiftUI
 
 class DataModel: ObservableObject {
-    @Published var rendas = ["Menos que um salário mínimo por mês", "de um a dois salários mínimos por mês", "de dois a trê salário mínimos por mês"]
+    @Published var rendas = ["Menos que um salário mínimo/mês", "De um a dois salários mínimos/mês", "De dois a três salário mínimos/mês", "Mais de três salários mínimos/mês", "Prefiro não dizer"]
 }
 
 
@@ -34,20 +34,14 @@ struct FamilyPerCapitaIncomeView: View {
                 .font(.caption)
                 .frame(width: UIScreen.main.bounds.width*0.8, height: 30, alignment: .leading)
                 .padding()
-         
-    
-//            code do OptionsScrollView() abaixo
+             
             ScrollView{
                 ForEach(bank.rendas, id: \.self) { renda in
                     OptionButtonView(parametro: renda)
-
                 }
               
             }.frame(width: UIScreen.main.bounds.width*0.8, height: UIScreen.main.bounds.height*0.4, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             .padding()
-            
-        
-    
             
             HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/){
                 Spacer()

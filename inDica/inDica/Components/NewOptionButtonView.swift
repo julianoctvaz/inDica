@@ -9,21 +9,27 @@ import SwiftUI
 
 struct NewOptionButtonView: View {
     
-    var text = "Uma mulher cisgênero"
+    var text: String
     
     var body: some View {
         Button(action: {
             
         }) {
             HStack{
-                Image(systemName: "plus")
-                    .foregroundColor(Color.init(red: 0.3451, green: 0.337255, blue: 0.84))
-                // Roxo mais escuro: 5856D6 = (88, 86, 214))))
                 TextField(text, text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
                     .foregroundColor(.black)
+                    .padding(.leading, UIScreen.main.bounds.width*0.025)
+                
+                Image(systemName: "plus")
+                    .foregroundColor(Color.init(red: 0.3451, green: 0.337255, blue: 0.84)) // Roxo mais escuro: 5856D6 = (88, 86, 214))))
             }
         }
-        .padding()
+        .frame(width: UIScreen.main.bounds.width*0.7, height: 20, alignment: .leading)
+        .padding(.top, UIScreen.main.bounds.height*0.015)
+        .padding(.bottom, UIScreen.main.bounds.height*0.015)
+        .padding(.leading, UIScreen.main.bounds.width*0.025)
+        .padding(.trailing, UIScreen.main.bounds.width*0.025)
+        .foregroundColor(.black)
         .background(Color.init(red: 0.8902, green: 0.9059, blue: 0.97255)) // Roxo mais claro 3E7F8 = (227, 231, 248)
         .cornerRadius(10)
     }
@@ -31,6 +37,6 @@ struct NewOptionButtonView: View {
 
 struct NewOptionButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        NewOptionButtonView()
+        NewOptionButtonView(text: "Outra Área")
     }
 }

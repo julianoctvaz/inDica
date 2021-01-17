@@ -7,10 +7,16 @@
 
 import SwiftUI
 
+class GendersModel: ObservableObject {
+    @Published var genders = ["Uma mulher transgênero", "Uma mulher cisgênero", "Um homem transgênero", "Um homem cisgênero", "Não sou binário"]
+}
+
 struct OnboardingGenderView: View {
     
     var name = "Dandara"
     var description = "Eu sou..."
+    @StateObject var bank = GendersModel() //fica so pro escopo dessa view
+
     
     var body: some View {
         VStack(alignment: .leading, spacing: nil, content: {
@@ -22,6 +28,14 @@ struct OnboardingGenderView: View {
             Text("\(description)")
                 .frame(width: UIScreen.main.bounds.width*0.8, height: 30, alignment: .leading)
                 .padding()
+            
+            ScrollView{
+                ForEach(bank.genders, id: \.self) { gender in
+                    OptionButtonView(parametro: gender)
+                }
+              
+            }.frame(width: UIScreen.main.bounds.width*0.8, height: UIScreen.main.bounds.height*0.4, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            .padding()
                             
             HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: /*@START_MENU_TOKEN@*/nil/*@END_MENU_TOKEN@*/, content: {
                 Spacer()
@@ -30,15 +44,13 @@ struct OnboardingGenderView: View {
                         .padding(UIScreen.main.bounds.height*0.02)
             })
             .foregroundColor(.white)
-            .background(Color.init(red: 0.3451, green: 0.337255, blue: 0.84))
-                // Roxo mais escuro: 5856D6 = (88, 86, 214)))
+            .background(Color.init(red: 0.3451, green: 0.337255, blue: 0.84)) // Roxo mais escuro: 5856D6 = (88, 86, 214)))
             .cornerRadius(100)
             })
             .frame(width: UIScreen.main.bounds.width*0.8, height: UIScreen.main.bounds.height*0.1, alignment: .center)
             .padding(.leading)
         })
     }
-    
     
 }
 

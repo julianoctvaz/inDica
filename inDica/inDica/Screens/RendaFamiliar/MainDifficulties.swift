@@ -7,11 +7,16 @@
 
 import SwiftUI
 
+class DifficultiesModel: ObservableObject {
+    @Published var difficulties = ["Montar um currículo interessante", "Preparação para entrevistas", "Saber o que esperam de mim", "Me capacitar para vaga", "Conciliar estudo e trabalho"]
+}
+
 struct MainDifficultiesView: View {
     
     var title = "E quais são suas principais dificuldades para arranjar emprego?"
     var description = "Acredito que..."
-    
+    @StateObject var bank = DifficultiesModel()
+
     var body: some View {
         VStack(alignment: .leading) {
             
@@ -23,8 +28,6 @@ struct MainDifficultiesView: View {
                 .frame(width: UIScreen.main.bounds.width*0.65, height: 105, alignment: .leading)
                 .padding()
                
-            
-            
             Text("\(description)")
                 .fixedSize(horizontal: false, vertical: true)
                 .font(.caption)
@@ -32,8 +35,16 @@ struct MainDifficultiesView: View {
                 .padding()
             
             
-//            OptionsScrollView()
-            
+            ScrollView{
+                VStack{
+                    ForEach(bank.difficulties, id: \.self) { diff    in
+                        OptionButtonView(parametro: diff)
+                    }
+                    NewOptionButtonView(text: "Outra dificuldade")
+                }
+              
+            }.frame(width: UIScreen.main.bounds.width*0.8, height: UIScreen.main.bounds.height*0.4, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            .padding()
             HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/){
                 Spacer()
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
