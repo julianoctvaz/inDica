@@ -7,9 +7,22 @@
 
 import SwiftUI
 
+class Mentor: Identifiable{
+    
+    var name: String
+    var city: String
+    var job: String
+    
+    init(name: String, job: String, city: String){
+        self.name = name
+        self.job = job
+        self.city = city
+    }
+}
+
 struct MentorsView: View {
     
-    var array = ["Tereza", "Dandara"]
+    var array: [Mentor] = [Mentor(name: "Tereza", job: "Corretor de Imóveis", city: "Recife - PE"), Mentor(name: "Leila", job: "Cabeleireira", city: "Chapada - BA")]
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -19,7 +32,7 @@ struct MentorsView: View {
             RoundedRectangle(cornerRadius: 8.0))
                 .edgesIgnoringSafeArea(.top)
                 .frame(width: UIScreen.main.bounds.width, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                .offset(x:0, y: -30)
+                .offset(x:0, y: -45)
 
 
             Text("Gente como você")
@@ -29,12 +42,12 @@ struct MentorsView: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 0) {
-                    ForEach(self.array, id: \.self) { mentor in
-                        MentorCollectionCell(name: mentor)
-                        }
+                        ForEach(self.array) { mentor in
+                            MentorCollectionCell(name: mentor.name, job: mentor.job, city: mentor.city)
+
                     }
+                }
             }
-            
             Text("Perfis favoritados")
                 .font(.title3)
                 .padding(.leading, UIScreen.main.bounds.width*0.05)
@@ -42,7 +55,7 @@ struct MentorsView: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 0) {
-                    ForEach(self.array, id: \.self) { mentor in
+                    ForEach(self.array) { mentor in
                         
                         FavoriteMentorsCollectionCell(job: "Corretora", company: "Avantia")
                         
