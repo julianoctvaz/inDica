@@ -24,8 +24,6 @@ struct FavoriteMentorsCollectionCell: View {
             Text("\(job)")
                 .font(.title3)
                 .foregroundColor(.gray)
-                .padding(.top, UIScreen.main.bounds.height*0.005)
-            
             
             Text("\(company)")
                 .font(.caption)

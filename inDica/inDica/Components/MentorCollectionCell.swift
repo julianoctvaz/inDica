@@ -34,11 +34,11 @@ struct MentorCollectionCell: View {
             Text("Corretora de Imóveis")
                 .font(.title2)
                 .foregroundColor(.gray)
-                .padding(.top, UIScreen.main.bounds.height*0.01)
+                .padding(.top, UIScreen.main.bounds.height*0.005)
+                .padding(.bottom, UIScreen.main.bounds.height*0.005)
             
             Text("Recife - PE")
                 .font(.caption)
-                .padding(.top, UIScreen.main.bounds.height*0.01)
                 .padding(.bottom, UIScreen.main.bounds.height*0.01)
         }
 //        .padding()
