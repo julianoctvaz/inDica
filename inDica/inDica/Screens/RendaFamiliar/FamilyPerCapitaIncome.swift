@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct FamilyPerCapitaIncomeView: View {
     
     var title = "Tudo bem falar da sua condição financeira?"
@@ -32,20 +31,14 @@ struct FamilyPerCapitaIncomeView: View {
                 .font(.caption)
                 .frame(width: UIScreen.main.bounds.width*0.8, height: 30, alignment: .leading)
                 .padding()
-         
-    
-//            code do OptionsScrollView() abaixo
+             
             ScrollView{
                 ForEach(bank.rendas, id: \.self) { renda in
                     OptionButtonView(parametro: renda)
-
                 }
               
             }.frame(width: UIScreen.main.bounds.width*0.8, height: UIScreen.main.bounds.height*0.4, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             .padding()
-            
-        
-    
             
             HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/){
                 Spacer()
