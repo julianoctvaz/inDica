@@ -119,6 +119,7 @@
 			);
 			name = "Gênero";
 			path = "Gênero";
+		};
 		17E708FA25B484D0000006DA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
