@@ -26,11 +26,10 @@ struct OnboardingGenderView: View {
 
             OptionsScrollView()
                 
-            // nao consegui encontrar o icone de next
             HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: /*@START_MENU_TOKEN@*/nil/*@END_MENU_TOKEN@*/, content: {
                 Spacer()
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Image(systemName: "plus")
+                    Image(systemName: "arrow.right")
                         .padding(UIScreen.main.bounds.height*0.02)
             })
             .foregroundColor(.white)
