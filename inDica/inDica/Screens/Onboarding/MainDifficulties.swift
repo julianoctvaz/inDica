@@ -12,9 +12,30 @@ struct MainDifficultiesView: View {
     var title = "E quais são suas principais dificuldades para arranjar emprego?"
     var description = "Acredito que..."
     @StateObject var bank = DataModel()
+    @State var showContentView_Toggle = false
+    @State var botaoDeVoltarToggle = false
+    
+    @Environment(\.presentationMode) var presentationMode
 
     var body: some View {
         VStack(alignment: .leading) {
+            
+            HStack(alignment: .center) {
+                Spacer()
+                Button(
+                    action: {
+                        self.botaoDeVoltarToggle.toggle()
+                        presentationMode.wrappedValue.dismiss()
+                    },
+                    label: {
+                        Image(systemName: "chevron.backward")
+                            .padding(UIScreen.main.bounds.height*0.02)
+                    })
+                    .foregroundColor(Color.init(red: 0.3451, green: 0.337255, blue: 0.84)) // Roxo mais escuro: 5856D6 = (88, 86, 214)))
+                    .cornerRadius(100)
+            }
+            .frame(width: UIScreen.main.bounds.width*0.1, height: UIScreen.main.bounds.height*0.1, alignment: .center)
+
             
             Text("\(title)")
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
@@ -43,7 +64,11 @@ struct MainDifficultiesView: View {
             .padding()
             HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/){
                 Spacer()
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Button(
+                    action: {
+                        self.showContentView_Toggle = true
+                    },
+                    label: {
                     Image(systemName: "arrow.right")
                         .padding(UIScreen.main.bounds.height*0.02)
                 })
@@ -53,6 +78,11 @@ struct MainDifficultiesView: View {
             }
             .frame(width: UIScreen.main.bounds.width*0.8, height: UIScreen.main.bounds.height*0.1, alignment: .center)
             .padding(.leading)
+            .fullScreenCover(isPresented: $showContentView_Toggle) {
+                //                if(user.username != "Juliano"){
+                ContentView()
+                //                }
+            }
             
             Spacer()
         }

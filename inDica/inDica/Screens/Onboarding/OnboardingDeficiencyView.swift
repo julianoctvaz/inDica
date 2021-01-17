@@ -12,9 +12,30 @@ struct OnboardingDeficiencyView: View {
     var description = "e portadora de..."
     @StateObject var bank = DataModel() //fica so pro escopo dessa view
 
+    @State var showFamilyPerCapitaIncome_Toggle = false
+    @State var botaoDeVoltarToggle = false
     
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
         VStack(alignment: .leading, spacing: nil, content: {
+            
+            HStack(alignment: .center) {
+                Spacer()
+                Button(
+                    action: {
+                        self.botaoDeVoltarToggle.toggle()
+                        presentationMode.wrappedValue.dismiss()
+                    },
+                    label: {
+                        Image(systemName: "chevron.backward")
+                            .padding(UIScreen.main.bounds.height*0.02)
+                    })
+                    .foregroundColor(Color.init(red: 0.3451, green: 0.337255, blue: 0.84)) // Roxo mais escuro: 5856D6 = (88, 86, 214)))
+                    .cornerRadius(100)
+            }
+            .frame(width: UIScreen.main.bounds.width*0.1, height: UIScreen.main.bounds.height*0.1, alignment: .center)
+
+            
             Text("Nos conte mais sobre você, \(name)!")
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 .bold()
@@ -37,7 +58,11 @@ struct OnboardingDeficiencyView: View {
                             
             HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: /*@START_MENU_TOKEN@*/nil/*@END_MENU_TOKEN@*/, content: {
                 Spacer()
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Button(
+                    action: {
+                        self.showFamilyPerCapitaIncome_Toggle = true
+                    },
+                    label: {
                     Image(systemName: "arrow.right")
                         .padding(UIScreen.main.bounds.height*0.02)
             })
@@ -47,6 +72,11 @@ struct OnboardingDeficiencyView: View {
             })
             .frame(width: UIScreen.main.bounds.width*0.8, height: UIScreen.main.bounds.height*0.1, alignment: .center)
             .padding(.leading)
+            .fullScreenCover(isPresented: $showFamilyPerCapitaIncome_Toggle) {
+                //                if(user.username != "Juliano"){
+                FamilyPerCapitaIncomeView()
+                //                }
+            }
         })
     }
 }

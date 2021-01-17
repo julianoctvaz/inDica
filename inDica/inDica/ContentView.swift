@@ -19,19 +19,19 @@ struct ContentView: View {
             
             
             TabView {
-                OnboardingGenderView()
+                Provisoria()
                     .tabItem {
                         Image(systemName: "person.2")
                         Text("Mentorias")
                     }
                 
-                SeachedAreaToWorkView()
+                Provisoria()
                     .tabItem {
                         Image(systemName: "flag")
                         Text("Jornada")
                     }
                 
-                MainDifficultiesView()
+                Provisoria()
 //                    .onAppear(perform: {
 //                        self.user.configureFirebaseState()
 //                    })

@@ -13,7 +13,7 @@ class DataModel: ObservableObject {
     
     @Published var genders = ["Uma mulher transgênero", "Uma mulher cisgênero", "Um homem transgênero", "Um homem cisgênero", "Não sou binário"]
     
-    @Published var breeds = ["Uma pessoa negra", "Uma pessoa indígena", "Uma pessoa branca", "Uma pessoa parda", "Eu nem sei..."]
+    @Published var breeds = ["Uma pessoa preta", "Uma pessoa indígena", "Uma pessoa branca", "Uma pessoa parda", "Eu nem sei..."]
     
     @Published var sexualities = ["LGBTQIA+", "Heterossexual"]
     

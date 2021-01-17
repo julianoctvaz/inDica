@@ -15,6 +15,7 @@ struct WelcomeView: View {
     var description = "Queremos te apresentar alguém para te ajudar a arranjar um emprego. Alguém real como você, que passou pelas mesmas situações e agora está cheia de dicas para dar."
     var description2 = "Para isso, seria ótimo te conhecer..."
     
+    @State var username:String = ""
     @State var showOnboardingGender_Toggle = false
     
     @EnvironmentObject var user: UserSettings //deixar essa classe global com os dados do usario
@@ -22,14 +23,18 @@ struct WelcomeView: View {
     var body: some View {
         VStack(alignment: .leading) {
             
+            
+            
             Text("\(title)")
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                .foregroundColor(Color.white)
                 .bold()
                 .frame(width: UIScreen.main.bounds.width*0.65, height: 105, alignment: .leading)
                 .padding()
             
             
             Text("\(description)")
+                .foregroundColor(Color.white)
                 .fixedSize(horizontal: false, vertical: true)
                 .font(.caption)
                 .frame(width: UIScreen.main.bounds.width*0.8, height: 30, alignment: .leading)
@@ -37,6 +42,7 @@ struct WelcomeView: View {
             
             
             Text("\(description2)")
+                .foregroundColor(Color.white)
                 .fixedSize(horizontal: false, vertical: true)
                 .font(.caption)
                 .frame(width: UIScreen.main.bounds.width*0.8, height: 30, alignment: .leading)
@@ -44,6 +50,7 @@ struct WelcomeView: View {
             
             
             Text("\(nameAsk)")
+                .foregroundColor(Color.white)
                 .fixedSize(horizontal: false, vertical: true)
                 .font(.callout)
                 .frame(width: UIScreen.main.bounds.width*0.8, height: 30, alignment: .leading)
@@ -51,13 +58,17 @@ struct WelcomeView: View {
             
             Button(action: {
                 
+//                user.username  = username
+                
             }) {
-                TextField("Digite seu nome", text: $user.username)
+                TextField("Digite seu nome", text: $username)
                     .disableAutocorrection(true)
+                
             }
             .padding()
-            .foregroundColor(.black)
-            .background(Color.init(red: 0.8902, green: 0.9059, blue: 0.97255)) // Roxo mais claro 3E7F8 = (227, 231, 248))
+            .foregroundColor(.white)
+//            .background(
+//            (Color.init(red: 0.8902, green: 0.9059, blue: 0.97255)) // Roxo mais claro 3E7F8 = (227, 231, 248))
             .frame(width: UIScreen.main.bounds.width*0.8, height: UIScreen.main.bounds.height*0.1, alignment: .center)
                     
             Spacer()
@@ -72,20 +83,25 @@ struct WelcomeView: View {
                         Image(systemName: "arrow.right")
                             .padding(UIScreen.main.bounds.height*0.02)
                 })
-                .foregroundColor(.white)
-                .background(Color.init(red: 0.3451, green: 0.337255, blue: 0.84)) // Roxo mais escuro: 5856D6 = (88, 86, 214)))
+                    .foregroundColor(Color.purple)
+                .background(Color.white) // Roxo mais escuro: 5856D6 = (88, 86, 214)))
                 .cornerRadius(100)
             }
             .frame(width: UIScreen.main.bounds.width*0.8, height: UIScreen.main.bounds.height*0.1, alignment: .center)
             .padding(.leading)
             .fullScreenCover(isPresented: $showOnboardingGender_Toggle) {
-                if(user.username != ""){
-                    FamilyPerCapitaIncomeView()
-                }
+//                if(user.username != "Juliano"){
+                    OnboardingGenderView()
+//                }
             }
+    
             
             Spacer()
         }
+        .background(
+            Image("fundoBoasVindas")
+            )
+
         
       
     }
@@ -96,14 +112,14 @@ struct WelcomeView: View {
 struct WelcomeView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            WelcomeView().environmentObject(UserSettings())
+            WelcomeView()
                 .previewDevice("iPhone SE (2nd generation)")
-            WelcomeView().environmentObject(UserSettings())
-                .previewDevice("iPhone 11")
-            WelcomeView().environmentObject(UserSettings())
-                .previewDevice("iPhone 8")
-            WelcomeView().environmentObject(UserSettings())
-                .previewDevice("iPhone 11 Pro")
+//            WelcomeView().environmentObject(UserSettings())
+//                .previewDevice("iPhone 11")
+//            WelcomeView().environmentObject(UserSettings())
+//                .previewDevice("iPhone 8")
+//            WelcomeView().environmentObject(UserSettings())
+//                .previewDevice("iPhone 11 Pro")
         }
     }
 }
