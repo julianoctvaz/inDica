@@ -12,16 +12,54 @@ struct MentorProfile: View {
     var job: String
     var city: String
     
+    @State var backButton_Toggle = false
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         VStack{
-
-            Image("topBar")
-                .clipShape(
-            RoundedRectangle(cornerRadius: 8.0))
-                .edgesIgnoringSafeArea(.top)
-                .position(x: UIScreen.main.bounds.width/2, y: 70)
-                .frame(width: UIScreen.main.bounds.width, height: 132, alignment: .center)
+            
+            
+            
+            ZStack{
+                Image("bar")
+                    .clipShape(
+                        RoundedRectangle(cornerRadius: 8.0))
+                    .edgesIgnoringSafeArea(.top)
+                    .position(x: UIScreen.main.bounds.width/2, y: 70)
+                    .frame(width: UIScreen.main.bounds.width, height: 132, alignment: .center)
+                    .offset(x: 0, y: -20)
                 
+                HStack{
+                    Button(
+                        action: {
+                            self.backButton_Toggle.toggle()
+                            print("back")
+                            presentationMode.wrappedValue.dismiss()
+                        },
+                        label: {
+                            Image(systemName: "chevron.backward")
+                                .padding(UIScreen.main.bounds.height*0.02)
+                        })
+                        .foregroundColor(Color.init(red: 0.3451, green: 0.337255, blue: 0.84)) // Roxo mais escuro: 5856D6 = (88, 86, 214)))
+                        .cornerRadius(100)
+                        .frame(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
+                    Spacer()
+                    
+                    Button(
+                        action: {
+                            print("fav")
+                        },
+                        label: {
+                            Image("fav")
+                                .padding(UIScreen.main.bounds.height*0.02)
+                        })
+                        .foregroundColor(Color.init(red: 0.3451, green: 0.337255, blue: 0.84)) // Roxo mais escuro: 5856D6 = (88, 86, 214)))
+                        .cornerRadius(100)
+                        .frame(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                }
+            }
+            
             Image("Tereza")
                 .resizable()
                 .scaledToFill()
@@ -29,7 +67,6 @@ struct MentorProfile: View {
                 .frame(width: 300, height: 180, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 .cornerRadius(8.0, corners: [.topLeft, .topRight, .bottomLeft, .bottomRight])
                 .shadow(radius: 5)
-            
             Text("\(name)")
                 .bold()
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
