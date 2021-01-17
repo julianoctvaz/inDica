@@ -59,7 +59,7 @@ struct YouView: View {
             .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
             .fullScreenCover(isPresented: $jaSeiQuemTeApresentarToggle) {
     
-                Provisoria()
+                JaSeiQuemTeApresentarView()
                 
             }
         

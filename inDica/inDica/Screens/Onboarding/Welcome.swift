@@ -63,13 +63,16 @@ struct WelcomeView: View {
             }) {
                 TextField("Digite seu nome", text: $username)
                     .disableAutocorrection(true)
+                    .foregroundColor(Color.init(red: 0.3451, green: 0.337255, blue: 0.84))
+                
                 
             }
             .padding()
             .foregroundColor(.white)
-//            .background(
-//            (Color.init(red: 0.8902, green: 0.9059, blue: 0.97255)) // Roxo mais claro 3E7F8 = (227, 231, 248))
+            .background(Color.init(red: 0.8902, green: 0.9059, blue: 0.97255)) // Roxo mais claro 3E7F8 = (227, 231, 248))
+            .cornerRadius(5)
             .frame(width: UIScreen.main.bounds.width*0.8, height: UIScreen.main.bounds.height*0.1, alignment: .center)
+            
                     
             Spacer()
             

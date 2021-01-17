@@ -21,6 +21,7 @@
 		174FE34325B4AD05004048AE /* Provisoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174FE34225B4AD05004048AE /* Provisoria.swift */; };
 		174FE34725B4B91D004048AE /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174FE34625B4B91D004048AE /* Journey.swift */; };
 		17A77D0C25B4D91E00D06218 /* YouView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A77D0B25B4D91E00D06218 /* YouView.swift */; };
+		17A77D1225B4E1E900D06218 /* JaSeiQuemTeApresentarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A77D1125B4E1E900D06218 /* JaSeiQuemTeApresentarView.swift */; };
 		17C023E025B49522000A8679 /* OnboardingToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C023DF25B49522000A8679 /* OnboardingToggle.swift */; };
 		17C023E325B4958A000A8679 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C023E225B4958A000A8679 /* MotherView.swift */; };
 		17E708F825B48464000006DA /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E708F725B48464000006DA /* UserSettings.swift */; };
@@ -54,6 +55,7 @@
 		174FE34225B4AD05004048AE /* Provisoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provisoria.swift; sourceTree = "<group>"; };
 		174FE34625B4B91D004048AE /* Journey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
 		17A77D0B25B4D91E00D06218 /* YouView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouView.swift; sourceTree = "<group>"; };
+		17A77D1125B4E1E900D06218 /* JaSeiQuemTeApresentarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JaSeiQuemTeApresentarView.swift; sourceTree = "<group>"; };
 		17C023DF25B49522000A8679 /* OnboardingToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingToggle.swift; sourceTree = "<group>"; };
 		17C023E225B4958A000A8679 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
 		17E708F725B48464000006DA /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				3E0869BE25B4894A00966C65 /* OnboardingSexualityView.swift */,
 				3E0869C125B48A3D00966C65 /* OnboardingDeficiencyView.swift */,
 				17A77D0B25B4D91E00D06218 /* YouView.swift */,
+				17A77D1125B4E1E900D06218 /* JaSeiQuemTeApresentarView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				17C023E325B4958A000A8679 /* MotherView.swift in Sources */,
 				171D427E25B45FF4009A3855 /* Welcome.swift in Sources */,
 				3E3A893725B3FEF300CFB5B8 /* OnboardingGender.swift in Sources */,
+				17A77D1225B4E1E900D06218 /* JaSeiQuemTeApresentarView.swift in Sources */,
 				171D428925B46816009A3855 /* MainDifficulties.swift in Sources */,
 				17480D1725B3F7A50055E581 /* ContentView.swift in Sources */,
 				3E0869BF25B4894A00966C65 /* OnboardingSexualityView.swift in Sources */,
