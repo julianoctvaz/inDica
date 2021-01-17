@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17086E1B25B4CC4800FBA22E /* MontarCurriculoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17086E1A25B4CC4800FBA22E /* MontarCurriculoView.swift */; };
 		171D427E25B45FF4009A3855 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171D427D25B45FF4009A3855 /* Welcome.swift */; };
 		171D428225B467B1009A3855 /* FamilyPerCapitaIncome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171D428125B467B1009A3855 /* FamilyPerCapitaIncome.swift */; };
 		171D428625B467E9009A3855 /* SeachedAreaToWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171D428525B467E9009A3855 /* SeachedAreaToWork.swift */; };
@@ -18,6 +19,7 @@
 		17480D1C25B3F7A70055E581 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17480D1B25B3F7A70055E581 /* Preview Assets.xcassets */; };
 		17480D1F25B3F7A70055E581 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17480D1D25B3F7A70055E581 /* LaunchScreen.storyboard */; };
 		174FE34325B4AD05004048AE /* Provisoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174FE34225B4AD05004048AE /* Provisoria.swift */; };
+		174FE34725B4B91D004048AE /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174FE34625B4B91D004048AE /* Journey.swift */; };
 		17C023E025B49522000A8679 /* OnboardingToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C023DF25B49522000A8679 /* OnboardingToggle.swift */; };
 		17C023E325B4958A000A8679 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C023E225B4958A000A8679 /* MotherView.swift */; };
 		17E708F825B48464000006DA /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E708F725B48464000006DA /* UserSettings.swift */; };
@@ -35,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17086E1A25B4CC4800FBA22E /* MontarCurriculoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontarCurriculoView.swift; sourceTree = "<group>"; };
 		171D427D25B45FF4009A3855 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		171D428125B467B1009A3855 /* FamilyPerCapitaIncome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyPerCapitaIncome.swift; sourceTree = "<group>"; };
 		171D428525B467E9009A3855 /* SeachedAreaToWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeachedAreaToWork.swift; sourceTree = "<group>"; };
@@ -48,6 +51,7 @@
 		17480D1E25B3F7A70055E581 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17480D2025B3F7A70055E581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		174FE34225B4AD05004048AE /* Provisoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provisoria.swift; sourceTree = "<group>"; };
+		174FE34625B4B91D004048AE /* Journey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
 		17C023DF25B49522000A8679 /* OnboardingToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingToggle.swift; sourceTree = "<group>"; };
 		17C023E225B4958A000A8679 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
 		17E708F725B48464000006DA /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
@@ -75,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17086E1925B4CC2100FBA22E /* Jornada */ = {
+			isa = PBXGroup;
+			children = (
+				174FE34625B4B91D004048AE /* Journey.swift */,
+				17086E1A25B4CC4800FBA22E /* MontarCurriculoView.swift */,
+			);
+			name = Jornada;
+			sourceTree = "<group>";
+		};
 		17480D0625B3F7A50055E581 = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +179,7 @@
 		3E2086BB25B407D6009BD8C6 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				17086E1925B4CC2100FBA22E /* Jornada */,
 				174FE34025B4AC79004048AE /* Onboarding */,
 				174FE34225B4AD05004048AE /* Provisoria.swift */,
 				3EFA0B4425B4B6F100EBA865 /* MentorsView.swift */,
@@ -249,7 +263,9 @@
 				17480D1325B3F7A50055E581 /* AppDelegate.swift in Sources */,
 				171D428625B467E9009A3855 /* SeachedAreaToWork.swift in Sources */,
 				3E0869C225B48A3D00966C65 /* OnboardingDeficiencyView.swift in Sources */,
+				174FE34725B4B91D004048AE /* Journey.swift in Sources */,
 				3ED081DB25B3FBE30071A17D /* OptionButtonView.swift in Sources */,
+				17086E1B25B4CC4800FBA22E /* MontarCurriculoView.swift in Sources */,
 				17C023E025B49522000A8679 /* OnboardingToggle.swift in Sources */,
 				3EF58F4325B4959300EC3606 /* MentorCollectionCell.swift in Sources */,
 				17480D1525B3F7A50055E581 /* SceneDelegate.swift in Sources */,

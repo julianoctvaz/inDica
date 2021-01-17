@@ -25,7 +25,7 @@ struct ContentView: View {
                         Text("Mentorias")
                     }
                 
-                Provisoria()
+                JourneyView()
                     .tabItem {
                         Image(systemName: "flag")
                         Text("Jornada")
