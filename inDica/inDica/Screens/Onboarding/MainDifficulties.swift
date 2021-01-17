@@ -79,7 +79,7 @@ struct MainDifficultiesView: View {
             .padding(.leading)
             .fullScreenCover(isPresented: $showContentView_Toggle) {
                 //                if(user.username != "Juliano"){
-                ContentView()
+                YouView()
                 //                }
             }
 
