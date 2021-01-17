@@ -7,15 +7,11 @@
 
 import SwiftUI
 
-class AreasModel: ObservableObject {
-    @Published var areas = ["Computação", "Design", "Educação", "Administração"]
-}
-
 struct SeachedAreaToWorkView: View {
 
     var title = "Em qual área você se sente mais preparada?"
     var description = "Procuro emprego na área de..."
-    @StateObject var bank = AreasModel()
+    @StateObject var bank = DataModel()
     
     var body: some View {
         VStack(alignment: .leading) {

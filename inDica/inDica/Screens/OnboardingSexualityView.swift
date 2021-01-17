@@ -7,14 +7,10 @@
 
 import SwiftUI
 
-class SexualityModel: ObservableObject {
-    @Published var sexualities = ["LGBTQIA+", "Heterossexual"]
-}
-
 struct OnboardingSexualityView: View {
     var name = "Dandara"
     var description = "sou..."
-    @StateObject var bank = SexualityModel() //fica so pro escopo dessa view
+    @StateObject var bank = DataModel() //fica so pro escopo dessa view
 
     
     var body: some View {

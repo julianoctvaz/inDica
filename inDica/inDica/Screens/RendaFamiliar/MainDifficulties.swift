@@ -7,15 +7,11 @@
 
 import SwiftUI
 
-class DifficultiesModel: ObservableObject {
-    @Published var difficulties = ["Montar um currículo interessante", "Preparação para entrevistas", "Saber o que esperam de mim", "Me capacitar para vaga", "Conciliar estudo e trabalho"]
-}
-
 struct MainDifficultiesView: View {
     
     var title = "E quais são suas principais dificuldades para arranjar emprego?"
     var description = "Acredito que..."
-    @StateObject var bank = DifficultiesModel()
+    @StateObject var bank = DataModel()
 
     var body: some View {
         VStack(alignment: .leading) {

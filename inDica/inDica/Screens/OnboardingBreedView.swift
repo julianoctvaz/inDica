@@ -7,15 +7,11 @@
 
 import SwiftUI
 
-class BreedsModel: ObservableObject {
-    @Published var breeds = ["Uma pessoa negra", "Uma pessoa indígena", "Uma pessoa branca", "Uma pessoa parda", "Eu nem sei..."]
-}
-
 struct OnboardingBreedView: View {
     
     var name = "Dandara"
     var description = "me vejo como..."
-    @StateObject var bank = BreedsModel() //fica so pro escopo dessa view
+    @StateObject var bank = DataModel() //fica so pro escopo dessa view
 
     
     var body: some View {

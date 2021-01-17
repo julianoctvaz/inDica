@@ -7,15 +7,11 @@
 
 import SwiftUI
 
-class GendersModel: ObservableObject {
-    @Published var genders = ["Uma mulher transgênero", "Uma mulher cisgênero", "Um homem transgênero", "Um homem cisgênero", "Não sou binário"]
-}
-
 struct OnboardingGenderView: View {
     
     var name = "Dandara"
     var description = "Eu sou..."
-    @StateObject var bank = GendersModel() //fica so pro escopo dessa view
+    @StateObject var bank = DataModel() //fica so pro escopo dessa view
 
     
     var body: some View {

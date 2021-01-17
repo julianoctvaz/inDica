@@ -7,14 +7,10 @@
 
 import SwiftUI
 
-class DeficiencyModel: ObservableObject {
-    @Published var deficiencies = ["Disfluência na fala", "Deficiência motora", "Deficiência auditiva", "Deficiência visual"]
-}
-
 struct OnboardingDeficiencyView: View {
     var name = "Dandara"
     var description = "e portadora de..."
-    @StateObject var bank = DeficiencyModel() //fica so pro escopo dessa view
+    @StateObject var bank = DataModel() //fica so pro escopo dessa view
 
     
     var body: some View {
