@@ -47,17 +47,26 @@ struct WelcomeView: View {
                 .frame(width: UIScreen.main.bounds.width*0.8, height: 30, alignment: .leading)
                 .padding()
             
-            TextField("Digite aqui seu nome", text: $username)
-                .padding([.leading, .trailing], 20)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .autocapitalization(.words)
-                .disableAutocorrection(true)
-                .foregroundColor(Color.purple)
+//            TextField("Digite aqui seu nome", text: $username)
+//                .padding([.leading, .trailing], 20)
+//                .textFieldStyle(RoundedBorderTextFieldStyle())
+//                .autocapitalization(.words)
+//                .disableAutocorrection(true)
+//                .foregroundColor(Color.purple)
 //                .background(Color.purple)
             
-            
-            
-//            OptionsScrollView()
+            Button(action: {
+                
+            }) {
+                TextField("Digite seu nome", text: $username)
+                    .disableAutocorrection(true)
+            }
+            .padding()
+            .foregroundColor(.black)
+            .background(Color.init(red: 0.8902, green: 0.9059, blue: 0.97255)) // Roxo mais claro 3E7F8 = (227, 231, 248))
+            .frame(width: UIScreen.main.bounds.width*0.8, height: UIScreen.main.bounds.height*0.1, alignment: .center)
+                    
+            Spacer()
             
             HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/){
                 Spacer()
@@ -66,7 +75,7 @@ struct WelcomeView: View {
                         .padding(UIScreen.main.bounds.height*0.02)
                 })
                 .foregroundColor(.white)
-                .background(Color.purple)
+                .background(Color.init(red: 0.3451, green: 0.337255, blue: 0.84)) // Roxo mais escuro: 5856D6 = (88, 86, 214)))
                 .cornerRadius(100)
             }
             .frame(width: UIScreen.main.bounds.width*0.8, height: UIScreen.main.bounds.height*0.1, alignment: .center)

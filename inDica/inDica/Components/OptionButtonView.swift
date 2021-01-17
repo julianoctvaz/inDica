@@ -20,8 +20,8 @@ struct OptionButtonView: View {
         .padding(.bottom, UIScreen.main.bounds.height*0.015)
         .padding(.leading, UIScreen.main.bounds.width*0.05)
         
-        .foregroundColor(.white)
-        .background(Color.purple)
+        .foregroundColor(.black)
+        .background(Color.init(red: 0.8902, green: 0.9059, blue: 0.97255)) // Roxo mais claro 3E7F8 = (227, 231, 248)
         .cornerRadius(10)
 
     }

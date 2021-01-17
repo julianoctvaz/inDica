@@ -41,7 +41,7 @@ struct MainDifficultiesView: View {
                         .padding(UIScreen.main.bounds.height*0.02)
                 })
                 .foregroundColor(.white)
-                .background(Color.purple)
+                .background(Color.init(red: 0.3451, green: 0.337255, blue: 0.84)) // Roxo mais escuro: 5856D6 = (88, 86, 214)))
                 .cornerRadius(100)
             }
             .frame(width: UIScreen.main.bounds.width*0.8, height: UIScreen.main.bounds.height*0.1, alignment: .center)

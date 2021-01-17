@@ -17,13 +17,14 @@ struct NewOptionButtonView: View {
         }) {
             HStack{
                 Image(systemName: "plus")
+                    .foregroundColor(Color.init(red: 0.3451, green: 0.337255, blue: 0.84))
+                // Roxo mais escuro: 5856D6 = (88, 86, 214))))
                 TextField(text, text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-                    
+                    .foregroundColor(.black)
             }
         }
         .padding()
-        .foregroundColor(.white)
-        .background(Color.purple)
+        .background(Color.init(red: 0.8902, green: 0.9059, blue: 0.97255)) // Roxo mais claro 3E7F8 = (227, 231, 248)
         .cornerRadius(10)
     }
 }
