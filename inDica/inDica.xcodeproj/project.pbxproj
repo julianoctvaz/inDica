@@ -28,6 +28,9 @@
 		3E3A893425B3FDCB00CFB5B8 /* NewOptionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A893325B3FDCB00CFB5B8 /* NewOptionButtonView.swift */; };
 		3E3A893725B3FEF300CFB5B8 /* OnboardingGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A893625B3FEF300CFB5B8 /* OnboardingGender.swift */; };
 		3ED081DB25B3FBE30071A17D /* OptionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED081DA25B3FBE30071A17D /* OptionButtonView.swift */; };
+		3EF58F4325B4959300EC3606 /* MentorCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF58F4225B4959300EC3606 /* MentorCollectionCell.swift */; };
+		3EF58F4625B49B4800EC3606 /* MentorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF58F4525B49B4800EC3606 /* MentorsView.swift */; };
+		3EF58F4925B49F2900EC3606 /* FavoriteMentorsCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF58F4825B49F2900EC3606 /* FavoriteMentorsCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		3E3A893325B3FDCB00CFB5B8 /* NewOptionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOptionButtonView.swift; sourceTree = "<group>"; };
 		3E3A893625B3FEF300CFB5B8 /* OnboardingGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingGender.swift; sourceTree = "<group>"; };
 		3ED081DA25B3FBE30071A17D /* OptionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionButtonView.swift; sourceTree = "<group>"; };
+		3EF58F4225B4959300EC3606 /* MentorCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorCollectionCell.swift; sourceTree = "<group>"; };
+		3EF58F4525B49B4800EC3606 /* MentorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorsView.swift; sourceTree = "<group>"; };
+		3EF58F4825B49F2900EC3606 /* FavoriteMentorsCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMentorsCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +145,8 @@
 			children = (
 				3E3A893325B3FDCB00CFB5B8 /* NewOptionButtonView.swift */,
 				3ED081DA25B3FBE30071A17D /* OptionButtonView.swift */,
+				3EF58F4225B4959300EC3606 /* MentorCollectionCell.swift */,
+				3EF58F4825B49F2900EC3606 /* FavoriteMentorsCollectionCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -224,11 +232,13 @@
 			files = (
 				3E0869BC25B4879200966C65 /* OnboardingBreedView.swift in Sources */,
 				171D428225B467B1009A3855 /* FamilyPerCapitaIncome.swift in Sources */,
+				3EF58F4925B49F2900EC3606 /* FavoriteMentorsCollectionCell.swift in Sources */,
 				17480D1325B3F7A50055E581 /* AppDelegate.swift in Sources */,
 				171D428625B467E9009A3855 /* SeachedAreaToWork.swift in Sources */,
 				3E0869C225B48A3D00966C65 /* OnboardingDeficiencyView.swift in Sources */,
 				3ED081DB25B3FBE30071A17D /* OptionButtonView.swift in Sources */,
 				17C023E025B49522000A8679 /* OnboardingToggle.swift in Sources */,
+				3EF58F4325B4959300EC3606 /* MentorCollectionCell.swift in Sources */,
 				17480D1525B3F7A50055E581 /* SceneDelegate.swift in Sources */,
 				17E708FC25B484F4000006DA /* DataModel.swift in Sources */,
 				17C023E325B4958A000A8679 /* MotherView.swift in Sources */,
@@ -236,6 +246,7 @@
 				3E3A893725B3FEF300CFB5B8 /* OnboardingGender.swift in Sources */,
 				171D428925B46816009A3855 /* MainDifficulties.swift in Sources */,
 				17480D1725B3F7A50055E581 /* ContentView.swift in Sources */,
+				3EF58F4625B49B4800EC3606 /* MentorsView.swift in Sources */,
 				3E0869BF25B4894A00966C65 /* OnboardingSexualityView.swift in Sources */,
 				3E3A893425B3FDCB00CFB5B8 /* NewOptionButtonView.swift in Sources */,
 				17E708F825B48464000006DA /* UserSettings.swift in Sources */,
