@@ -182,7 +182,7 @@ struct JourneyView: View {
             }
        
             .background(
-                Image("journeyPoints")
+                Image("JourneyPoints")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height*0.99, alignment: .leading)
