@@ -8,10 +8,43 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
 
-        OnboardingGenderView()
-    }
+
+//        @EnvironmentObject var user: UserSettings
+//        init() {
+//            UITabBar.appearance().isTranslucent = true
+//            UITabBar.appearance().barTintColor = UIColor(named: "AmareloMédio")
+        
+        var body: some View {
+            
+            
+            TabView {
+                OnboardingGenderView()
+                    .tabItem {
+                        Image(systemName: "person.2")
+                        Text("Mentorias")
+                    }
+                
+                SeachedAreaToWorkView()
+                    .tabItem {
+                        Image(systemName: "flag")
+                        Text("Jornada")
+                    }
+                
+                MainDifficultiesView()
+//                    .onAppear(perform: {
+//                        self.user.configureFirebaseState()
+//                    })
+                    .tabItem {
+                        Image(systemName: "face.smiling")
+                        Text("Você")
+                    }
+            }
+            .accentColor(Color.blue)
+            
+        }
+    
+
 }
 
 struct ContentView_Previews: PreviewProvider {
