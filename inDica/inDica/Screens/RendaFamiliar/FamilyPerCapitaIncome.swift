@@ -7,11 +7,18 @@
 
 import SwiftUI
 
+class DataModel: ObservableObject {
+    @Published var rendas = ["Menos que um salário mínimo por mês", "de um a dois salários mínimos por mês", "de dois a trê salário mínimos por mês"]
+}
+
+
 struct FamilyPerCapitaIncomeView: View {
     
     var title = "Tudo bem falar da sua condição financeira?"
     var description = "Minha familia recebe, por pessoa..."
     
+    @StateObject var bank = DataModel() //fica so pro escopo dessa view
+  
     var body: some View {
         VStack(alignment: .leading) {
             
@@ -29,7 +36,18 @@ struct FamilyPerCapitaIncomeView: View {
                 .padding()
          
     
-            OptionsScrollView()
+//            code do OptionsScrollView() abaixo
+            ScrollView{
+                ForEach(bank.rendas, id: \.self) { renda in
+                    OptionButtonView(parametro: renda)
+
+                }
+              
+            }.frame(width: UIScreen.main.bounds.width*0.8, height: UIScreen.main.bounds.height*0.4, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            .padding()
+            
+        
+    
             
             HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/){
                 Spacer()

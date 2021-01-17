@@ -29,7 +29,7 @@ struct SeachedAreaToWorkView: View {
                 .padding()
             
             
-            OptionsScrollView()
+//            OptionsScrollView()
             
             HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/){
                 Spacer()

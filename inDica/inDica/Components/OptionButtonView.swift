@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct OptionButtonView: View {
+    
+    var parametro: String
+    
     var body: some View {
         Button(action: {}) {
-            Text("Uma mulher cisgênero")
+            Text("\(parametro)")
         }
         .frame(width: UIScreen.main.bounds.width*0.7, height: 20, alignment: .leading)
         .padding(.top, UIScreen.main.bounds.height*0.015)
@@ -19,13 +22,13 @@ struct OptionButtonView: View {
         
         .foregroundColor(.white)
         .background(Color.purple)
-        .cornerRadius(30)
+        .cornerRadius(10)
 
     }
 }
 
 struct OptionButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        OptionButtonView()
+        OptionButtonView(parametro: "Default")
     }
 }

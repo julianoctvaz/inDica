@@ -24,7 +24,7 @@ struct NewOptionButtonView: View {
         .padding()
         .foregroundColor(.white)
         .background(Color.purple)
-        .cornerRadius(30)
+        .cornerRadius(10)
     }
 }
 

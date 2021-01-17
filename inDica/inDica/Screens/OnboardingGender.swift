@@ -24,7 +24,7 @@ struct OnboardingGenderView: View {
                 .padding()
             
 
-            OptionsScrollView()
+//            OptionsScrollView()
                 
             HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: /*@START_MENU_TOKEN@*/nil/*@END_MENU_TOKEN@*/, content: {
                 Spacer()
