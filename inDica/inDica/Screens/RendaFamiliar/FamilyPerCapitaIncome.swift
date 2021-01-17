@@ -14,6 +14,8 @@ struct FamilyPerCapitaIncomeView: View {
     var description = "Minha familia recebe, por pessoa..."
     
     @StateObject var bank = DataModel() //fica so pro escopo dessa view
+    
+//    @EnvironmentObject var user: UserSettings
   
     var body: some View {
         VStack(alignment: .leading) {
@@ -70,12 +72,12 @@ struct FamilyPerCapitaIncomeView: View {
 struct FamilyPerCapitaIncome_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            FamilyPerCapitaIncomeView()
-                .previewDevice("iPhone SE (2nd generation)")
-            FamilyPerCapitaIncomeView()
-                .previewDevice("iPhone 11")
-            FamilyPerCapitaIncomeView()
-                .previewDevice("iPhone 8")
+//            FamilyPerCapitaIncomeView().environmentObject(UserSettings())
+//                .previewDevice("iPhone SE (2nd generation)")
+//            FamilyPerCapitaIncomeView()
+//                .previewDevice("iPhone 11")
+//            FamilyPerCapitaIncomeView()
+//                .previewDevice("iPhone 8")
             FamilyPerCapitaIncomeView()
                 .previewDevice("iPhone 11 Pro")
         }
