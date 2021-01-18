@@ -24,13 +24,12 @@ struct NewOptionButtonView: View {
                     .foregroundColor(Color.init(red: 0.3451, green: 0.337255, blue: 0.84)) // Roxo mais escuro: 5856D6 = (88, 86, 214))))
             }
         }
-        .frame(width: UIScreen.main.bounds.width*0.7, height: 20, alignment: .leading)
+        .frame(width: UIScreen.main.bounds.width*0.85, height: 15, alignment: .leading)
         .padding(.top, UIScreen.main.bounds.height*0.015)
         .padding(.bottom, UIScreen.main.bounds.height*0.015)
-        .padding(.leading, UIScreen.main.bounds.width*0.025)
-        .padding(.trailing, UIScreen.main.bounds.width*0.025)
+        .padding(.leading, UIScreen.main.bounds.width*0.03)
         .foregroundColor(.black)
-        .background(Color.init(red: 0.8902, green: 0.9059, blue: 0.97255)) // Roxo mais claro 3E7F8 = (227, 231, 248)
+        .background(Color.init(red: 0.93, green: 0.73, blue: 0.855)) // Roxo mais claro 3E7F8 = (227, 231, 248)
         .cornerRadius(10)
     }
 }
