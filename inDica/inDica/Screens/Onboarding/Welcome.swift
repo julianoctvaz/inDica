@@ -64,23 +64,25 @@ struct WelcomeView: View {
             }) {
                 ZStack(){
                     Rectangle()
-
-
+                        .frame(width: UIScreen.main.bounds.width*0.6, height: 15, alignment: .leading)
+                        .padding(.top, UIScreen.main.bounds.height*0.015)
+                        .padding(.bottom, UIScreen.main.bounds.height*0.015)
+                        .padding(.leading, UIScreen.main.bounds.width*0.03)
                         .background(Color.init(red: 0.8902, green: 0.9059, blue: 0.97255)) // Roxo mais claro 3E7F8 = (227, 231, 248)
                         .cornerRadius(5)
                 TextField("Digite seu nome", text: $username)
                     .disableAutocorrection(true)
                     .foregroundColor(Color.init(red: 0.3451, green: 0.337255, blue: 0.84))
                 
-                
-            }
+
+
             .padding()
             .foregroundColor(.white)
             .background(Color.init(red: 0.8902, green: 0.9059, blue: 0.97255)) // Roxo mais claro 3E7F8 = (227, 231, 248))
             .cornerRadius(5)
             .frame(width: UIScreen.main.bounds.width*0.8, height: UIScreen.main.bounds.height*0.1, alignment: .center)
             
-                    
+                }}
             Spacer()
             
             HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/){
@@ -110,6 +112,14 @@ struct WelcomeView: View {
         }
         .background(
             Image("fundoBoasVindas")
+                
+//                .resizable()
+//                .scaledToFill()
+//                .frame(alignment: .leading)
+               .edgesIgnoringSafeArea(.all)
+//            .ignoresSafeArea()
+            
+
             )
 
         
@@ -123,7 +133,7 @@ struct WelcomeView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             WelcomeView()
-                .previewDevice("iPhone SE (2nd generation)")
+                .previewDevice("iPhone 11")
 //            WelcomeView().environmentObject(UserSettings())
 //                .previewDevice("iPhone 11")
 //            WelcomeView().environmentObject(UserSettings())
@@ -134,4 +144,4 @@ struct WelcomeView_Previews: PreviewProvider {
     }
 }
 
-}
+
