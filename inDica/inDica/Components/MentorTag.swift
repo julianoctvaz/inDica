@@ -22,7 +22,7 @@ struct MentorTag: View {
         .padding(.leading, UIScreen.main.bounds.width*0.01)
         .padding(.trailing, UIScreen.main.bounds.width*0.01)
         .foregroundColor(.white)
-        .background(Color.init(red: 0.3451, green: 0.337255, blue: 0.84))
+        .background(Color.init(red: 0.851, green: 0.384, blue: 0.678))
         .clipShape(RoundedRectangle(cornerRadius: 8.0))
     }
 }

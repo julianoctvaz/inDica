@@ -11,10 +11,11 @@ struct FavoriteMentorsCollectionCell: View {
     
     var job: String
     var company: String
+    var image: String
     
     var body: some View {
         VStack{
-            Image("Tereza")
+            Image("\(image)")
                 .resizable()
                 .scaledToFill()
                 .frame(width: UIScreen.main.bounds.width*0.2, height: UIScreen.main.bounds.width*0.2, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
@@ -37,6 +38,6 @@ struct FavoriteMentorsCollectionCell: View {
 
 struct FavoriteMentorsCollectionCell_Previews: PreviewProvider {
     static var previews: some View {
-        FavoriteMentorsCollectionCell(job: "Designer", company: "Avantia")
+        FavoriteMentorsCollectionCell(job: "Designer", company: "Avantia", image: "Tereza")
     }
 }

@@ -12,11 +12,12 @@ struct MentorCollectionCell: View {
     var name: String
     var job: String
     var city: String
+    var image: String
 
     var body: some View {
         
         VStack(alignment: .center){
-            Image("Tereza")
+            Image("\(image)")
                 .resizable()
                 .scaledToFill()
 //                .frame(width: UIScreen.main.bounds.width*0.35, height: UIScreen.main.bounds.width*0.35, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
@@ -54,6 +55,6 @@ struct MentorCollectionCell: View {
 
 struct MentorCollectionCell_Previews: PreviewProvider {
     static var previews: some View {
-        MentorCollectionCell(name: "Tereza", job: "Corretora de Imóveis", city: "Recife - PE")
+        MentorCollectionCell(name: "Tereza", job: "Corretora de Imóveis", city: "Recife - PE", image: "Tereza")
     }
 }

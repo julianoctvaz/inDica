@@ -26,6 +26,8 @@ struct MentorsView: View {
     
     var array: [Mentor] = [Mentor(name: "Tereza", job: "Corretor de Imóveis", city: "Recife - PE"), Mentor(name: "Leila", job: "Cabeleireira", city: "Chapada - BA")]
     
+    var favs: [Mentor] = [Mentor(name: "Joana", job: "Corretor de Imóveis", city: "Recife - PE"), Mentor(name: "Maria", job: "Cabeleireira", city: "Chapada - BA")]
+    
     var body: some View {
         VStack(alignment: .leading) {
             
@@ -44,7 +46,7 @@ struct MentorsView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 0) {
                     ForEach(self.array) { mentor in
-                            MentorCollectionCell(name: mentor.name, job: mentor.job, city: mentor.city)
+                        MentorCollectionCell(name: mentor.name, job: mentor.job, city: mentor.city, image: mentor.name)
                                 .onTapGesture {
                                     print("Cliquei no \(mentor.name)")
                                     self.showDetails_Toggle.toggle()
@@ -63,9 +65,9 @@ struct MentorsView: View {
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(alignment: .top, spacing: 0) {
-                        ForEach(self.array) { mentor in
+                        ForEach(self.favs) { mentor in
                             
-                            FavoriteMentorsCollectionCell(job: "Corretora", company: "Avantia")
+                            FavoriteMentorsCollectionCell(job: "Corretora", company: "Avantia", image: mentor.name)
                             
                         }
                     }
