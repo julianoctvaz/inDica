@@ -114,7 +114,7 @@ struct JourneyView: View {
                         .fixedSize(horizontal: false, vertical: true)
                         .frame(width: UIScreen.main.bounds.width*0.55, height: 30, alignment: .leading)
                         .padding()
-                        .padding(.top, UIScreen.main.bounds.width*0.097)
+                        .padding(.top, UIScreen.main.bounds.width*0.07)
 
 
                     Button(
@@ -194,6 +194,7 @@ struct JourneyView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height*0.99, alignment: .leading)
+                .padding(.top, 19)
 
 
         )
