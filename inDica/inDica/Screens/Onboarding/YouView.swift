@@ -76,6 +76,8 @@ struct YouView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height*1, alignment: .center)
+                .edgesIgnoringSafeArea(.all)
+
         )
     }
 }

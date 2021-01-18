@@ -22,33 +22,33 @@ struct WelcomeView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            
-            
-            
+
+
+
             Text("\(title)")
                 .font(.custom("Raleway", size:28))
                 .foregroundColor(Color.white)
                 .bold()
                 .frame(width: UIScreen.main.bounds.width*0.65, height: 105, alignment: .leading)
                 .padding()
-            
-            
+
+
             Text("\(description)")
                 .foregroundColor(Color.white)
                 .fixedSize(horizontal: false, vertical: true)
                 .font(.custom("Raleway", size:15.5))
                 .frame(width: UIScreen.main.bounds.width*0.8, height: 30, alignment: .leading)
                 .padding()
-            
-            
+
+
             Text("\(description2)")
                 .foregroundColor(Color.white)
                 .fixedSize(horizontal: false, vertical: true)
                 .font(.custom("Raleway", size:15.5))
                 .frame(width: UIScreen.main.bounds.width*0.8, height: 30, alignment: .leading)
                 .padding()
-            
-            
+
+
             Text("\(nameAsk)")
                 .foregroundColor(Color.white)
                 .bold()
@@ -56,11 +56,11 @@ struct WelcomeView: View {
                 .font(.custom("Raleway", size:17))
                 .frame(width: UIScreen.main.bounds.width*0.8, height: 30, alignment: .leading)
                 .padding()
-            
+
             Button(action: {
-                
-//                user.username  = username
-                
+
+                //                user.username  = username
+
             }) {
                 ZStack(){
                     Rectangle()
@@ -70,57 +70,57 @@ struct WelcomeView: View {
                         .padding(.leading, UIScreen.main.bounds.width*0.03)
                         .background(Color.init(red: 0.8902, green: 0.9059, blue: 0.97255)) // Roxo mais claro 3E7F8 = (227, 231, 248)
                         .cornerRadius(5)
-                TextField("Digite seu nome", text: $username)
-                    .disableAutocorrection(true)
-                    .foregroundColor(Color.init(red: 0.3451, green: 0.337255, blue: 0.84))
-                
+                    TextField("Digite seu nome", text: $username)
+                        .disableAutocorrection(true)
+                        .foregroundColor(Color.init(red: 0.3451, green: 0.337255, blue: 0.84))
 
 
-            .padding()
-            .foregroundColor(.white)
-            .background(Color.init(red: 0.8902, green: 0.9059, blue: 0.97255)) // Roxo mais claro 3E7F8 = (227, 231, 248))
-            .cornerRadius(5)
-            .frame(width: UIScreen.main.bounds.width*0.8, height: UIScreen.main.bounds.height*0.1, alignment: .center)
-            
+
+                        .padding()
+                        .foregroundColor(.white)
+                        .background(Color.init(red: 0.8902, green: 0.9059, blue: 0.97255)) // Roxo mais claro 3E7F8 = (227, 231, 248))
+                        .cornerRadius(5)
+                        .frame(width: UIScreen.main.bounds.width*0.8, height: UIScreen.main.bounds.height*0.1, alignment: .center)
+
                 }}
             Spacer()
-            
-            HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/){
+
+            HStack(alignment: .center){
                 Spacer()
                 Button(
                     action: {
                         self.showOnboardingGender_Toggle = true
-                },
+                    },
                     label: {
                         Image(systemName: "arrow.right")
                             .padding(UIScreen.main.bounds.height*0.02)
-                })
+                    })
                     .foregroundColor(Color.purple)
-                .background(Color.white) // Roxo mais escuro: 5856D6 = (88, 86, 214)))
-                .cornerRadius(100)
+                    .background(Color.white) // Roxo mais escuro: 5856D6 = (88, 86, 214)))
+                    .cornerRadius(100)
             }
             .frame(width: UIScreen.main.bounds.width*0.8, height: UIScreen.main.bounds.height*0.1, alignment: .center)
             .padding(.leading)
             .fullScreenCover(isPresented: $showOnboardingGender_Toggle) {
-//                if(user.username != "Juliano"){
-                    OnboardingGenderView()
-//                }
+                //                if(user.username != "Juliano"){
+                OnboardingGenderView()
+                //                }
             }
-    
-            
+
+
             Spacer()
         }
         .background(
             Image("fundoBoasVindas")
-                
-//                .resizable()
-//                .scaledToFill()
-//                .frame(alignment: .leading)
-               .edgesIgnoringSafeArea(.all)
-//            .ignoresSafeArea()
-            
 
-            )
+                //                .resizable()
+                //                .scaledToFill()
+                //                .frame(alignment: .leading)
+                .edgesIgnoringSafeArea(.all)
+            //            .ignoresSafeArea()
+
+
+        )
 
         
       
