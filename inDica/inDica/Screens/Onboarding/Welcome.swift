@@ -12,7 +12,7 @@ struct WelcomeView: View {
     
     var title = "Boas-vindas!"
     var nameAsk = "Como você se chama?"
-    var description = "Queremos te apresentar alguém para te ajudar a arranjar um emprego. Alguém real como você, que passou pelas mesmas situações e agora está cheia de dicas para dar."
+    var description = "Queremos te apresentar alguém para te ajudar a arranjar um emprego. Alguém real como você, que passou pelas mesmas situações e agora está cheia de dicas para dar!"
     var description2 = "Para isso, seria ótimo te conhecer..."
     
     @State var username:String = ""
@@ -26,7 +26,7 @@ struct WelcomeView: View {
             
             
             Text("\(title)")
-                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                .font(.custom("Raleway", size:28))
                 .foregroundColor(Color.white)
                 .bold()
                 .frame(width: UIScreen.main.bounds.width*0.65, height: 105, alignment: .leading)
@@ -36,7 +36,7 @@ struct WelcomeView: View {
             Text("\(description)")
                 .foregroundColor(Color.white)
                 .fixedSize(horizontal: false, vertical: true)
-                .font(.caption)
+                .font(.custom("Raleway", size:15.5))
                 .frame(width: UIScreen.main.bounds.width*0.8, height: 30, alignment: .leading)
                 .padding()
             
@@ -44,15 +44,16 @@ struct WelcomeView: View {
             Text("\(description2)")
                 .foregroundColor(Color.white)
                 .fixedSize(horizontal: false, vertical: true)
-                .font(.caption)
+                .font(.custom("Raleway", size:15.5))
                 .frame(width: UIScreen.main.bounds.width*0.8, height: 30, alignment: .leading)
                 .padding()
             
             
             Text("\(nameAsk)")
                 .foregroundColor(Color.white)
+                .bold()
                 .fixedSize(horizontal: false, vertical: true)
-                .font(.callout)
+                .font(.custom("Raleway", size:17))
                 .frame(width: UIScreen.main.bounds.width*0.8, height: 30, alignment: .leading)
                 .padding()
             
@@ -61,6 +62,12 @@ struct WelcomeView: View {
 //                user.username  = username
                 
             }) {
+                ZStack(){
+                    Rectangle()
+
+
+                        .background(Color.init(red: 0.8902, green: 0.9059, blue: 0.97255)) // Roxo mais claro 3E7F8 = (227, 231, 248)
+                        .cornerRadius(5)
                 TextField("Digite seu nome", text: $username)
                     .disableAutocorrection(true)
                     .foregroundColor(Color.init(red: 0.3451, green: 0.337255, blue: 0.84))
@@ -127,3 +134,4 @@ struct WelcomeView_Previews: PreviewProvider {
     }
 }
 
+}

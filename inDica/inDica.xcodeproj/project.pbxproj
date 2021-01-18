@@ -28,6 +28,7 @@
 		17C023E325B4958A000A8679 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C023E225B4958A000A8679 /* MotherView.swift */; };
 		17E708F825B48464000006DA /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E708F725B48464000006DA /* UserSettings.swift */; };
 		17E708FC25B484F4000006DA /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E708FB25B484F4000006DA /* DataModel.swift */; };
+		331E251625B4E1C800EA3CB8 /* Raleway.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 331E251525B4E1C800EA3CB8 /* Raleway.ttf */; };
 		3E0869BC25B4879200966C65 /* OnboardingBreedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0869BB25B4879200966C65 /* OnboardingBreedView.swift */; };
 		3E0869BF25B4894A00966C65 /* OnboardingSexualityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0869BE25B4894A00966C65 /* OnboardingSexualityView.swift */; };
 		3E0869C225B48A3D00966C65 /* OnboardingDeficiencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0869C125B48A3D00966C65 /* OnboardingDeficiencyView.swift */; };
@@ -66,6 +67,7 @@
 		17C023E225B4958A000A8679 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
 		17E708F725B48464000006DA /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		17E708FB25B484F4000006DA /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		331E251525B4E1C800EA3CB8 /* Raleway.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Raleway.ttf; sourceTree = "<group>"; };
 		3E0869BB25B4879200966C65 /* OnboardingBreedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingBreedView.swift; sourceTree = "<group>"; };
 		3E0869BE25B4894A00966C65 /* OnboardingSexualityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSexualityView.swift; sourceTree = "<group>"; };
 		3E0869C125B48A3D00966C65 /* OnboardingDeficiencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingDeficiencyView.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 		17480D1125B3F7A50055E581 /* inDica */ = {
 			isa = PBXGroup;
 			children = (
+				331E251425B4E1B900EA3CB8 /* Fonts */,
 				3E0A316625B4AF3400126331 /* Extensões */,
 				17E708FA25B484D0000006DA /* Classes */,
 				3E2086BB25B407D6009BD8C6 /* Screens */,
@@ -177,6 +180,14 @@
 				17E708FB25B484F4000006DA /* DataModel.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		331E251425B4E1B900EA3CB8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				331E251525B4E1C800EA3CB8 /* Raleway.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		3E0A316625B4AF3400126331 /* Extensões */ = {
@@ -271,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17480D1F25B3F7A70055E581 /* LaunchScreen.storyboard in Resources */,
+				331E251625B4E1C800EA3CB8 /* Raleway.ttf in Resources */,
 				17480D1C25B3F7A70055E581 /* Preview Assets.xcassets in Resources */,
 				17480D1925B3F7A70055E581 /* Assets.xcassets in Resources */,
 			);

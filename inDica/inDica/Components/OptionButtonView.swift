@@ -14,7 +14,9 @@ struct OptionButtonView: View {
     var body: some View {
         Button(action: {}) {
             Text("\(parametro)")
-                .font(.footnote)
+            //    .font(.footnote)
+                .font(.custom("Raleway", size:13))
+
 
         }
         .frame(width: UIScreen.main.bounds.width*0.85, height: 15, alignment: .leading)

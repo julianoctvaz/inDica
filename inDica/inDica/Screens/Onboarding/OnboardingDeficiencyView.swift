@@ -9,7 +9,7 @@ import SwiftUI
 
 struct OnboardingDeficiencyView: View {
     var name = "Dandara"
-    var description = "e portadora de..."
+    var description = "eu tenho..."
     @StateObject var bank = DataModel() //fica so pro escopo dessa view
 
     @State var showFamilyPerCapitaIncome_Toggle = false
@@ -37,13 +37,13 @@ struct OnboardingDeficiencyView: View {
 
             
             Text("Nos conta mais\nsobre você,\n\(name)?")
-                .font(.title)
+                .font(.custom("Raleway", size:28))
                 .bold()
                 .frame(width: UIScreen.main.bounds.width*0.85, height: 105, alignment: .leading)
             //   .padding()
             Text("\(description)")
                 .fixedSize(horizontal: false, vertical: true)
-                .font(.body)
+                .font(.custom("Raleway", size:17))
                 .frame(width: UIScreen.main.bounds.width*0.8, height: 30, alignment: .leading)
                 .padding(.vertical)
             

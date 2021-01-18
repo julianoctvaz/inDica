@@ -14,7 +14,9 @@ struct MentorTag: View {
     var body: some View {
         Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
             Text("\(text)")
-        }).frame(width: 105, height: 16, alignment: .center)
+        })
+        .font(.custom("Raleway", size:17))
+        .frame(width: 105, height: 16, alignment: .center)
         .padding(.top, UIScreen.main.bounds.height*0.005)
         .padding(.bottom, UIScreen.main.bounds.height*0.005)
         .padding(.leading, UIScreen.main.bounds.width*0.01)

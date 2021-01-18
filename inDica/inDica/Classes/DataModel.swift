@@ -17,10 +17,10 @@ class DataModel: ObservableObject {
     
     @Published var sexualities = ["LGBTQIA+", "heterossexual", "(prefiro não dizer)"]
     
-    @Published var deficiencies = ["disfluência na fala", "deficiência motora", "deficiência auditiva", "deficiência visual", "(não sou portadora)"]
+    @Published var deficiencies = ["disfluência na fala.", "deficiência motora.", "deficiência auditiva.", "deficiência visual.", "(não possuo alguma deficiência)"]
     
-    @Published var areas = ["tecnologias", "design", "administração", "vendas", "serviços", "(não tenho uma área específica)"]
+    @Published var areas = ["tecnologias,", "design,", "administração,", "vendas,", "serviços", "(não tenho uma área específica)"]
     
-    @Published var difficulties = ["montar um currículo legal", "me preparar para entrevistas ou seleções", "saber o que esperam de mim no emprego", "me capacitar para vagas", "aprender a onciliar estudo e trabalho", "conseguir lidar com minha disfluência na fala"]
+    @Published var difficulties = ["montar um currículo legal,", "me preparar para entrevistas ou seleções,", "saber o que esperam de mim no emprego,", "me capacitar para vagas,", "aprender a onciliar estudo e trabalho,", "conseguir lidar com minha disfluência na fala,"]
     
 }

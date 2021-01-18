@@ -31,16 +31,16 @@ struct MentorCollectionCell: View {
         
             Text("\(name)")
                 .bold()
-                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-            
-            Text("\(job)")
-                .font(.title2)
+                .font(.custom("Raleway", size:28))
+
+            Text("Corretora de Imóveis")
+                .font(.custom("Raleway", size:22))
                 .foregroundColor(.gray)
                 .padding(.top, UIScreen.main.bounds.height*0.005)
                 .padding(.bottom, UIScreen.main.bounds.height*0.005)
             
-            Text("\(city)")
-                .font(.caption)
+            Text("Recife - PE")
+                .font(.custom("Raleway", size:12))
                 .padding(.bottom, UIScreen.main.bounds.height*0.01)
         }
 //        .padding()

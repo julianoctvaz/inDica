@@ -36,10 +36,10 @@ struct MentorsView: View {
                 .frame(width: UIScreen.main.bounds.width, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 .offset(x:0, y: -45)
             
-            Text("Gente como você")
-                .font(.title2)
+            Text("Pessoas parecidas com você")
+                .font(.custom("Raleway", size:22))
                 .padding(.leading, UIScreen.main.bounds.width*0.05)
-                .frame(width: UIScreen.main.bounds.width*0.6, alignment: .leading)
+                .frame(width: UIScreen.main.bounds.width*0.9, alignment: .leading)
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 0) {

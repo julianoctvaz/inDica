@@ -106,5 +106,6 @@ struct MontarCurriculoView: View {
 struct MontarCurriculoView_Previews: PreviewProvider {
     static var previews: some View {
         MontarCurriculoView()
+            .previewDevice("iPhone 11")
     }
 }

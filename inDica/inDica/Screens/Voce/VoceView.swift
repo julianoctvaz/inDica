@@ -52,6 +52,8 @@ struct VoceView: View {
             }) {
                 Text("Rever sua apresentação")
                     .bold()
+                    .font(.custom("Raleway", size:17))
+
             }
             .frame(width: UIScreen.main.bounds.width*0.7, height: 20, alignment: .center)
             .padding(.top, UIScreen.main.bounds.height*0.015)
@@ -83,5 +85,6 @@ struct VoceView: View {
 struct VoceView_Previews: PreviewProvider {
     static var previews: some View {
         VoceView()
+            .previewDevice("iPhone 11")
     }
 }

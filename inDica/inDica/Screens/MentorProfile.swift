@@ -69,20 +69,21 @@ struct MentorProfile: View {
                 .shadow(radius: 5)
             Text("\(name)")
                 .bold()
-                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                .font(.custom("Raleway", size:28))
             
             Text("\(job)")
-                .font(.title2)
+                .font(.custom("Raleway", size:22))
                 .foregroundColor(.gray)
                 .padding(.top, UIScreen.main.bounds.height*0.005)
             
             Text("\(city)")
-                .font(.caption)
+                .font(.custom("Raleway", size:17))
                 .padding(.bottom, UIScreen.main.bounds.height*0.01)
             
             VStack{
                 Text("Posso ajudar em:")
-                    .font(.headline)
+                    .bold()
+                    .font(.custom("Raleway", size:17))
                     .frame(width: UIScreen.main.bounds.width*0.9, height: 25, alignment: .leading)
                 
                 HStack{
@@ -98,16 +99,22 @@ struct MentorProfile: View {
             
             ScrollView(.vertical){
                 Text("Minha breve história")
-                    .font(.title3)
+                    .font(.custom("Raleway", size:20))
                     .frame(width: UIScreen.main.bounds.width*0.9, height: 10, alignment: .leading)
                     .padding()
                 
                 Text("Eu estava com a vida um pouco parada, procurava serviços mas não conseguia conciliar minha formação com um emprego. Uma colega, sabendo disso, me ajudou a começar como corretora. A flexibilidade foi o que me motivou.")
+                    .font(.custom("Raleway", size:17))
+
                     .frame(width: UIScreen.main.bounds.width*0.9, height: 120, alignment: .leading)
                     .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
-                    .padding(.bottom, UIScreen.main.bounds.height*0.001)
+                    .padding(.bottom, UIScreen.main.bounds.height*0.006)
+
                 
                 Text("Entre em contato!")
+                    .bold()
+                    .font(.custom("Raleway", size:20))
+
                     .frame(width: UIScreen.main.bounds.width*0.9, height: 15, alignment: .leading)
                 
                 Image("contact")
@@ -125,5 +132,6 @@ struct MentorProfile: View {
 struct MentorProfile_Previews: PreviewProvider {
     static var previews: some View {
         MentorProfile(name: "Tereza", job: "Corretora de Imóveis", city: "Recife - PE")
+            .previewDevice("iPhone 11")
     }
 }

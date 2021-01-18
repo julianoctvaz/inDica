@@ -22,11 +22,11 @@ struct FavoriteMentorsCollectionCell: View {
                 .padding()
             
             Text("\(job)")
-                .font(.title3)
+                .font(.custom("Raleway", size:20))
                 .foregroundColor(.gray)
             
             Text("\(company)")
-                .font(.caption)
+                .font(.custom("Raleway", size:12))
                 .foregroundColor(.gray)
                 .padding(.top, UIScreen.main.bounds.height*0.001)
         }

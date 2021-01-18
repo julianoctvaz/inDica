@@ -27,7 +27,7 @@ struct JaSeiQuemTeApresentarView: View {
             }) {
                 Text("Vamos lá!")
                     .bold()
-            }
+                    .font(.custom("Raleway", size:17))            }
             .frame(width: UIScreen.main.bounds.width*0.7, height: 20, alignment: .center)
             .padding(.top, UIScreen.main.bounds.height*0.015)
             .padding(.bottom, UIScreen.main.bounds.height*0.015)

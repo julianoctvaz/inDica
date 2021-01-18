@@ -48,6 +48,8 @@ struct YouView: View {
             }) {
                 Text("É isso mesmo")
                     .bold()
+                    .font(.custom("Raleway", size:17))
+                
             }
             .frame(width: UIScreen.main.bounds.width*0.7, height: 20, alignment: .center)
             .padding(.top, UIScreen.main.bounds.height*0.015)
@@ -73,7 +75,7 @@ struct YouView: View {
             Image("conclusaoDadosVoce")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height*1, alignment: .leading)
+                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height*1, alignment: .center)
         )
     }
 }
@@ -81,5 +83,6 @@ struct YouView: View {
 struct YouView_Previews: PreviewProvider {
     static var previews: some View {
         YouView()
+            .previewDevice("iPhone 11")
     }
 }
